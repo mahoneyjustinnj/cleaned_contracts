@@ -1,0 +1,7 @@
+sas_key
+sas_key.pub
+
+# Ignore R history and data
+.Rhistory
+.RData
+
