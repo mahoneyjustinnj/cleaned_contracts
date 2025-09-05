@@ -76,9 +76,14 @@ system("git add .")
 #2nd - i will commit the changes using:
 system("git commit -m 'Add new data and scripts'  ")
 # 3rd - i will push the changes to github
-system("")
-
-
+system("git push origin master")
+#result
+# To https://github.com/mahoneyjustinnj/cleaned_contracts
+# 655bba8..720e306  master -> master
+#get the status
+system("git status")
+# On branch master
+# Your branch is up to date with 'origin/master'.
 
 
 
