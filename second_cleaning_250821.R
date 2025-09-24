@@ -486,14 +486,14 @@ df1 <- df1 %>% arrange(vendor_name, desc(contract_date))
 
 con <- DBI::dbConnect(duckdb::duckdb(), "contracts.duckdb")
 DBI::dbWriteTable(con, "cleaned_contracts_tbl250821", df1, overwrite = TRUE)
-yy <- write.csv(df1, file="/cloud/project/cleaning_script/read_SQL/clean_contracts_efficient_250820/cleaned_contract_data_250821.csv", row.names = FALSE)
+yy <- write.csv(df1, file="/cloud/project/cleaning_script/read_SQL/clean_contracts_efficient_250820/cleaned_contract_data_250910.csv", row.names = FALSE)
 rm(list = setdiff(ls(), "con"))
 
 tables_info <- DBI::dbGetQuery(con, "SHOW TABLES")
 print(tables_info)
 # Method: Using dbplyr with tbl() and collect() (recommended)
 df <- tbl(con, "cleaned_contracts_tbl250821") %>% collect()
-#View(df)
+View(df)
 
 
 

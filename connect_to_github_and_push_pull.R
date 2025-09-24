@@ -16,6 +16,10 @@ system("git branch")
 # result:
 #   * master
 
+#show the latest commit
+system("git log -1")
+
+
 # This will fetch and merge any new commits from your GitHub repo (cleaned_contracts) into your Posit Cloud workspace.
 system("git pull origin master")
 #result was to pll in the following 3 files (below)
@@ -33,6 +37,7 @@ system("git log --oneline")
 
 #this gives the status of the pushes and pulls
 system("git status")
+system("git remote -v")
 #result:
 # On branch master
 # Your branch is up to date with 'origin/master'.
@@ -48,7 +53,7 @@ system("git add .gitignore connect_to_github_and_push_pull.R")
 
 # This command creates a new commit with the staged files and attaches a message describing the changes.
 # In this case, it records the addition of the .gitignore file and the GitHub connection script.
-system("git commit -m 'Add .gitignore and GitHub connection script'")
+system("git commit -m 'testing if my connection to github is working'")
 #result
 # [master 655bba8] Add .gitignore and GitHub connection script
 # 2 files changed, 51 insertions(+)
@@ -75,6 +80,7 @@ system("git add .")
 
 #2nd - i will commit the changes using:
 system("git commit -m 'Add new data and scripts'  ")
+system("git commit -m 'Add postal code coordinates'  ")
 # 3rd - i will push the changes to github
 system("git push origin master")
 #result
