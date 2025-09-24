@@ -79,7 +79,7 @@ system("git add .")
 # git add grc_cleaned_final_final_250904.csv
 
 #2nd - i will commit the changes using:
-system("git commit -m 'Add new data and scripts'  ")
+system("git commit -m 'add a test file to repo'  ")
 system("git commit -m 'Add postal code coordinates'  ")
 # 3rd - i will push the changes to github
 system("git push origin master")
