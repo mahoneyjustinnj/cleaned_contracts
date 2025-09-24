@@ -1,0 +1,46 @@
+It’s Friday, and I feel like a squirrel on espresso—ready to conquer the world, but mostly just scatter nuts and forget where I put them.
+
+The mountains you are carrying, you were only supposed to climb.
+
+Keep climbing your mountains, and remember that every step you take brings you closer to your dreams.
+
+install.packages("sas7bdat")
+library(sas)
+sas <- sas.connect("your-server-url", "username", "password")
+data <- sas.get(sas, "your_dataset_name")
+
+library(ggplot2)
+ggplot(data, aes(x=variable1, y=variable2)) +
+  geom_point() +
+  labs(title="Scatter Plot", x="Variable 1", y="Variable 2")
+ggsave("scatter_plot.png")
+
+
+################################
+
+https://www150.statcan.gc.ca/n1/en/catalogue/92-179-X  stats can boundaries
+
+https://www150.statcan.gc.ca/n1/pub/92-179-g/2016001/tbl/tbla.1-eng.htm stats can FSAs
+
+https://myapps.microsoft.com/
+
+https://www.youtube.com/watch?v=pxHdMvzMhcs SAS visualize
+
+https://www.youtube.com/watch?v=2ZdJgpjWy0I&list=PLVV6eZFA22Qw2bmAI5_K2P3xU_CVx20n5&index=8  SAS quick start
+
+https://www.youtube.com/watch?v=tQp2I9xoBbQ  SAS viya - using python
+
+https://canadabuys.canada.ca/en/tender-opportunities/commodity-codes  Federal Canada Codes
+
+https://canadabuys.canada.ca/en federal Canada
+
+https://open.canada.ca/en Canada Open data
+
+https://cran.r-project.org/web/packages/tidygeocoder/readme/README.html R programmin - Work on postal codes
+
+https://github.com/ssyphi SAS instructor github
+
+https://github.com/sassoftware/sas-code-examples other SAS instrucotr
+
+
+Carry a light heart, wear a humble smile, and let laughter be your lantern—joy follows those who walk kindly lit.”
